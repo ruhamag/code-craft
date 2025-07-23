@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    
+    justify-content: center;
+    
+    background-color: antiquewhite;
+}
+/* exercise 1 */
+.team h2{
+    margin: 40px;
+    color: rgb(0, 0, 0);
+    
+    padding: 50px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    margin: 40px;
+    padding: 30px;
+    background-color: rgb(202, 202, 208);
+    border-radius: 8%;
+}
+ul {
+    
+  list-style-type: none; 
+  padding-left: 0;       
+}
+.social-media {
+ display: flex;
+ justify-content: center;
+ gap: 30px;
+ margin-top: 20px;
+
+}
+.content  {
+    text-align: center;
+    margin-bottom: 10px;
+}
+a[href^="mailto"] {
+    color: rgb(126, 41, 41);
+}
+a[href^="git"] {
+    color:black;
+}
+a[href^="twitter"] {
+    color:rgb(77, 77, 231);
+}
+ .social-media i:hover {
+    color:rgb(111, 107, 107);
+ }
+ .social-media i::after {
+    color:blue;
+ }
+ .team h2::before {
+    content: "👋";
+ }
+ .profile-image img {
+    border-radius: 5%;
+ }
+ /*exercise 2*/
+ #pricing {
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+ }
+ .price-plan{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    column-gap: 15px;
+    
+
+ }
+ .plan p {
+    margin: 15px;
+ }
+ .plan {
+    text-align: center;
+    background-color: rgb(160, 157, 157);
+    margin-top: 10px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+ }
+ .plan:first-child {
+    box-sizing: content-box
+ }
+ .popular::before {
+    content:"most popular";
+    top: -10px;
+    
+    border-radius: 10px;
+    background: goldenrod;
+    font-size:20px;
+    font-weight: bold;
+    
+ }
+
+ .plan:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+
+ }
+.button {
+    background-color: rgb(243, 243, 113);
+    width: 70px;
+    height: 27px;
+    font-size: 16px;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1.5px;
+    cursor: pointer;
+
+}
+.button:hover {
+    transform: scaleX(1.2);
+}
+/* exercise 3 */
+.hero {
+    display: flex;
+    margin-top: 60px;
+    position:relative;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    
+}
+.hero-bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+}
+#nav-bar {
+    position: absolute;
+    z-index: 3;
+    padding: 0px;
+    margin: 0px;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+    gap:30px;
+}
+nav li {
+  
+  display: inline;       
+  display: inline-block; 
+  display: block;        
+}
+.contents{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    
+    
+}
+.contents button{
+    margin-left: 280px;
+    margin-top: 30px;
+    width: 100px;
+    height:30px;
+    background: black;
+    color: azure;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contents p{
+    color: rgb(7, 3, 3);
+    font-size: 30px;
+}
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        margin: 20px 0;
+        width: 90%;
+        border-radius: 15px;
+    }
+    .price-plan {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .hero {
+        flex-direction: column;
+        margin-top: 40px;
+        min-height: auto;
+    }
+    .contents {
+        margin-top: 30px;
+        padding: 20px;
+    }
+}
