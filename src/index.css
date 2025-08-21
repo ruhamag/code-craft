@@ -1,13 +1,362 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
+  
+
+  
+}
+body{
+  background-color: antiquewhite;
+}
+.container-nav {
+  justify-content: space-between;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  background-color: antiquewhite;
+ /* max-width: 600px;
+   margin: 0 auto; */
+  border-bottom: 1px solid #f3d2e1
+}
+.navbar h3 {
+  color: #f1356d;
+  margin-right: auto;
+}
+ /*.navbar .links {
+ margin-left: auto; 
+}*/
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d
+}
+.content {
+  /*max-width: 600px;*/
+  
+  padding: 20px;
+}
+.home-container {
+  display: flex;
+  padding: 20px;
+  margin:40px auto;
+  justify-content: space-around;
+}
+.image img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  animation: float 4s ease-in-out infinite;
+  }
+
+span {
+  color: #f1356d
+}
+.home h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 3rem;
+}
+.home button {
+  margin-top: 30px;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+  background-color: #f1356d;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.about-me{
+  max-width: 800px;
+  align-items: center;
+  margin: auto;
+  background-color: antiquewhite;
+  
+}
+.about-me h1 {
+  font-size: 3rem;
+  color: #f1356d;
+  
+   margin-bottom: 40px; 
+   margin-top: 40px;
+   border-bottom: 1px dashed #cd94ae;
+   text-align: center;
+   
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.footer-container {
+  background-color: #3f3d3d;   /* dark gray (change to any color you like) */
+  color: white;             /* makes text visible on dark bg */
+  padding: 20px;
+  text-align: center;
+  position: fixed;   /* keeps it fixed */
+  bottom: 0;         /* sticks to bottom */
+  left: 0;
+  width: 100%; 
+  border-top: 2px solid #f1356d;
+}
+
+.footer-container a i {
+  color: white;   /* makes your social icons visible */
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.footer-container hr {
+  border: 0;
+  height: 1px;
+  background: white;
+  margin: 15px 0;
+}
+.footer-container h3 {
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.footer-container p {
+  color: #f1356d;
+}
+.skills-container {
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 200px;
+}
+.html img{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.css img{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.java-script img{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.figma img{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.skills-box-one {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  margin-left: 410px;
+  margin-bottom:30px ;
+}
+.skills-box-two {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  margin-left: 410px;
+}
+.skills-container h1{
+  color:#f1356d ;
+  margin-bottom: 50px;
+  
+
+}
+.html {
+  padding:10px;
+  background-color:#f1356d;
+  border: 1px solid black;
+  border-width: 3px;
+  border-radius: 8px;
+}
+ h4 {
+  color: white;
+}
+.level{
+  color: white;
+}
+.css {
+  padding:10px;
+  background-color:#f1356d;
+  border: 1px solid black;
+  border-width: 3px;
+  border-radius: 8px;
+}
+.java-script {
+  padding:10px;
+  background-color:#f1356d;
+  border: 1px solid black;
+  border-width: 3px;
+  border-radius: 8px;
+}
+.figma {
+  padding:10px;
+  background-color:#f1356d;
+  border: 1px solid black;
+  border-width: 3px;
+  border-radius: 8px;
+}
+.contact-container{
+  text-align: center;
+  margin-bottom: 200px;
+}
+.first-row {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+.second-row {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+.message {
+margin-left: -260px;
+}
+.contact-form label {
+  display: block;   /* makes label take full width (new line) */
+  margin-bottom: 6px;
+  margin-right: 120px;
+  font-weight: 600;
+  color:#f1356d;
+}
+.submit-btn {
+  margin-left: -300px;
+  margin-top: 30px;
+  height: 40px;
+  width: 150px;
+  background-color: #f1356d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.contact-container p{
+  margin-bottom: 40px;
+}
+.contact-container h1{
+  color: #f1356d;
+}
+form{
+  background-color: white;
+  padding: 30px;
+  width: 500px;
+  margin-left: 450px;
+  border-radius: 8px;
+  border: 1px solid #f1356d;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px); 
+  }
+  100% {
+    transform: translateY(0px);   
+  }
+}
+
+@media (max-width: 1024px) {
+  .image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .skills-box-one,
+  .skills-box-two {
+    gap: 80px;
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .skills-box-one,
+  .skills-box-two {
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+  }
+
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .first-row,
+  .second-row {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .message,
+  .submit-btn {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .home button {
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .skills-container h1,
+  .about-me h1,
+  .contact-container h1 {
+    font-size: 2rem;
+  }
+
+  .image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  form {
+    padding: 20px;
+    width: 95%;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
 }
